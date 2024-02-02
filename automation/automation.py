@@ -63,8 +63,6 @@ def menu():
         console.print("3. Sort documents into appropriate folders")
         console.print("4. Parse a log file for errors and warnings")
         console.print("5. Count the number of specific file types in a directory")
-        console.print("6. Rename files based on a specific pattern")
-        console.print("7. Automatically back up specific folders")
         console.print("0. Exit")
 
         choice = Prompt.ask("Enter the task number (0-7): ")
@@ -85,13 +83,7 @@ def menu():
             target_folder = Prompt.ask("Enter the path of the target folder: ")
             parse_log_file(log_file, target_folder)
         elif choice == '5':
-            # Add your implementation for counting file types in a directory
-            pass
-        elif choice == '6':
-            # Add your implementation for renaming files based on a specific pattern
-            pass
-        elif choice == '7':
-            # Add your implementation for automatically backing up specific folders
+            # need to implement this
             pass
         elif choice == '0':
             console.print("Exiting the application. Goodbye!", style="green")
